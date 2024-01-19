@@ -25,11 +25,11 @@ router.get("/patients/:id", PatientController.show); //perintah untuk menampilka
 
 router.get("/patients/search/:name", PatientController.search); // Perintah untuk menampilkan nama berdasarkan nama
 
-router.get("/patients/search/positive", PatientController.positive); // Perintah untuk Positive
+router.get("/patients/status/positive", PatientController.positive); // Perintah untuk Positive
 
-router.get("/patients/search/dead", PatientController.dead); // Perintah untuk menampilkan orang meninggal
+router.get("/patients/status/dead", PatientController.dead); // Perintah untuk menampilkan orang meninggal
 
-router.get("/patients/search/recovered", PatientController.recovered); // Perintah untuk Recovered
+router.get("/patients/status/recovered", PatientController.recovered); // Perintah untuk Recovered
 
 // Export router
 module.exports = router;
